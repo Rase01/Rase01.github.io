@@ -1,35 +1,78 @@
 body{
     margin: 0 auto;
-    padding: 0;
+    background: #DADBBD;
 }
 
 header{
-    margin-top: 0 auto;
-    padding: 0;
-    background-color: #151D3B;
-}
-.tabla{
+    background-color: #19282F;
+    height: 80px;
     width: 100%;
-    padding: 0;
-    margin-top: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-bottom: 3px solid #B33030;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-logo{
+    line-height: 120px;
+    padding: 8px 12px;
+}
+
+.logo{
+    width: 80px;
+    margin-left: 40px;
+    padding: 8px 12px;
+}
+
+#box-img{
+    width: 10px;
     height: 50px;
 }
+
 .links{
-    color: #6EBF8B;
-}
-#texto_nav{
-    font-size: large;
+    color: #DADBBD;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3px;
 }
+
+.links:hover{
+    background-color: #B33030;
+    transition: 0.5s;
+}
+
 h1{ 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100px;
-    color: #6EBF8B;
+    color: #B33030;
     text-shadow: 3px 3px 1px black;
-    background-color: white;
+    font-weight: bold;
 }
+
 .tabla_content{
-    background: #417D7A;
+    background: #DADBBD;
     width: 100%;
     padding: 20px;
     margin-top: 10px auto;
@@ -43,7 +86,7 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    color: #DADBBD;
+    color: #151D3B;
 }
 .tabla_content thead{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -59,7 +102,7 @@ h1{
 }
 
 footer{
-    background-color: #6EBF8B; 
+    background-color: #19282F; 
     width: 100%;
     text-align: center; 
     padding: 0;
@@ -74,7 +117,7 @@ footer{
     font-size: 20px;
     font-weight: 600;
     margin-right: 50px;
-    color: #151D3B;
+    color: #DADBBD;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #logo{

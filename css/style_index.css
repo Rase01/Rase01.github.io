@@ -63,7 +63,6 @@ header{
     transition: 0.5s;
 }
 
-
 h1{ 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100px;
@@ -71,6 +70,7 @@ h1{
     text-shadow: 3px 3px 1px black;
     font-weight: bold;
 }
+
 p{
    padding: 50px;
    width: 700px;
