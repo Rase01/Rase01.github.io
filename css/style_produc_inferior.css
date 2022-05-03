@@ -1,9 +1,9 @@
 body{
-    background: #6EBF8B;
+    background: #19282F;
 }
 
 footer{
-    background-color: #6EBF8B; 
+    background-color: #19282F; 
     width: 100%;
     text-align: center; 
     padding: 0;
@@ -12,21 +12,23 @@ footer{
 .list{
     list-style: none;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 600;
     margin-right: 50px;
-    color: #151D3B;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    float: left;
-    margin-left: 500px;
+    color: #DADBBD;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
 }
 #logo{
     margin: auto;
     margin-bottom: 0 auto;
     padding: 0%;
     text-align: center;
-    margin-top: 20px;
-    margin-right: 300px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
 }

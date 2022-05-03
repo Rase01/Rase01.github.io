@@ -23,4 +23,17 @@ table{
     color: #151D3B;
     padding: 10px;
     text-align: center;
+    margin-right: 50px;
+}
+.links{
+    color: #151D3B;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 3px;
+}
+
+.links:hover{
+    background-color: #8aae4c;
+    transition: 0.5s;
 }
