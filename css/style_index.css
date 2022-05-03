@@ -9,6 +9,7 @@ header{
     top: 0;
     left: 0;
     position: fixed;
+    border-bottom: 3px solid #B33030;
 }
 
 .nav{
