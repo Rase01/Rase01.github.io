@@ -3,6 +3,8 @@ body{
     background: #DADBBD;
 }
 
+/*header*/
+
 header{
     background-color: #19282F;
     height: 80px;
@@ -12,6 +14,8 @@ header{
     position: fixed;
     border-bottom: 3px solid #B33030;
 }
+
+/*nav styles*/
 
 .nav{
     display: flex;
@@ -63,12 +67,18 @@ header{
     transition: 0.5s;
 }
 
+/*main*/
+
 h1{ 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100px;
     color: #B33030;
     text-shadow: 3px 3px 1px black;
     font-weight: bold;
+}
+
+#cuerpo{
+    background-color: #19282F;
 }
 
 p{
@@ -82,9 +92,7 @@ p{
    color: #DADBBD;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#cuerpo{
-    background-color: #19282F;
-}
+
 .tabla_produc{
     width: 100%;
     background-color: #DADBBD;
@@ -152,6 +160,8 @@ table.tabla_produc tr:nth-child(3){
 #palta{
     line-height: 100px;
 }
+
+/*footer*/
 
 footer{
     background-color: #19282F; 
