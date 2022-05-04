@@ -1,0 +1,1 @@
+Esta carpeta solo es para fines de testeo.

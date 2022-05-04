@@ -9,7 +9,6 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    position: fixed;
     border-bottom: 3px solid #B33030;
 }
 
@@ -70,6 +69,7 @@ h1{
     color: #B33030;
     text-shadow: 3px 3px 1px black;
     font-weight: bold;
+    margin-top: 0;
 }
 
 /*body table */
