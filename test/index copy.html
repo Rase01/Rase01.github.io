@@ -10,32 +10,30 @@
     <title>TAVA PERU</title>
 </head>
 <body>
-    <!--This part is for the header, including the links and the main logo.-->
-    <!--Esta parte es la cabecera, incluye los links y el logo.-->
     <div class="container">
         <header>
-            <nav class="nav">
-                <a href="index.html" class="nav-logo">
-                    <div id="box-img">
-                        <img src="LogoSafco.png" alt="logo" class="logo">
-                    </div>
-                </a>
-                <div class="nav-lista" id="menu">
-                    <ul class="nav-menu">
-                        <li class="nav-menu-item">
-                            <a href="index.html" class="links"><b>HOME</b></a>
+            <nav class="main-nav">
+                <div class="main-nav__logo-container">
+                    <a href="index.html">
+                        <img class="main-nav__logo-container-logo" src="LogoSafco.png" alt="logo">
+                    </a>
+                </div>
+                <div class="main-nav__menu" id="nav-menu">
+                    <ul class="main-nav__menu-ul">
+                        <li class="main-nav__menu-ul-item">
+                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="conocenos.html" class="links"><b>CONOCENOS</b></a>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="productos.html" class="links"><b>PRODUCTOS</b></a>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="servicios.html" class="links"><b>SERVICIOS</b></a>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
                         </li>
-                        <li class="nav-menu-item">
-                            <a href="contacto.html" class="links"><b>CONTACTANOS</b></a>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
                         </li>
                     </ul>
                 </div>
@@ -44,27 +42,28 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-        <div class="contenido" id="move-contenido">
+        <div class="main" id="move-contenido">
             <main>
-                <h1 align="center">TAVA <span style="color: #19282F; text-shadow: 3px 3px 1px #B33030;">PERÚ</span></h1>
-                <section id="cuerpo">
-                    <img src="fundo_algarrobo_pampeano.png" alt="fundo_algarrobo_pampeano" width="100%">
-                    <p class="resumen">
+                <h1 class="main__h1">TAVA <span class="main__h1--part">PERÚ</span></h1>
+                <section class="main__resume">
+                    <img class="main__resume-img" src="fundo_algarrobo_pampeano.png" alt="fundo_algarrobo_pampeano">
+                    <p class="main__resume-p">
                         Somos un grupo de empresas dedicadas a la producción,
                         empaque y comercialización de frutas frescas. Desde el año 2010 trabajamos con los 
                         distintos actores del sector agroexportador peruano y hoy en día producimos y 
                         empacamos el grueso de la fruta que exportamos a los distintos mercados mundiales.
                     </p> 
                 </section>
+                <h2 class="main__h2">NUESTROS PRODUCTOS</h2>
             </main>
         </div>       
         <div class="widget" id="widget1">
-            <h2 class="sub-titulo">UVA</h2>
-            <div class="container-img">
-                <figure>
+            <h2 class="widget__h2">UVA</h2>
+            <div class="widget__img">
+                <figure class="widget__img-figure">
                     <img src="uva.jpg" alt="uva">
-                    <div class="capa">
-                        <ul class="list-productos">
+                    <div class="widget__img-figure-container">
+                        <ul class="widget__img-figure-container-text">
                             <li>RED GLOBE</li>
                             <li>SWEET GLOBE</li>
                             <li>SWEET CELEBRATION</li>
@@ -74,37 +73,37 @@
                     </div>                                
                 </figure>
             </div>
-            <p class="description">
+            <p class="widget__description">
                 5 variedades de UVA
             </p>
         </div>
         <div class="widget" id="widget2">
-            <h2 class="sub-titulo">PALTA</h2>
-            <div class="container-img">
-                <figure>
-                    <img src="palta.jpg" alt="palta">
-                    <div class="capa">
-                        <ul class="list-productos" id="palta">
+            <h2 class="widget__h2">PALTA</h2>
+            <div class="widget__img">
+                <figure class="widget__img-figure">
+                    <img class="widget__img-figure-img" src="palta.jpg" alt="palta">
+                    <div class="widget__img-figure-container">
+                        <ul class="widget__img-figure-container-text--palta">
                             <li>HASS</li>
                             <li>FUERTE</li>
                         </ul>
                     </div>
                 </figure>
             </div>
-            <p class="description"> 
+            <p class="widget__description"> 
                 2 variedades de PALTA
             </p>
         </div>
         <div class="footer" id="footer"> 
             <footer>
-                <ul class="list">
-                    <li><big><big>CONTACTO</big></big></li>
-                    <li>Alcanflores 1234</li>
-                    <li>Miraflores Lima 20</li>
-                    <li>Teléfono: +51 999 876 532</li>
-                    <li>Correo: comercio@tavaperu.com</li>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item--active">CONTACTO</li>
+                    <li class="footer__menu-item">Alcanflores 1234</li>
+                    <li class="footer__menu-item">Miraflores Lima 20</li>
+                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
+                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
                 </ul>
-                <img src="LogoSafco.png" alt="logo" width="150" id="logo">
+                <img class="footer__logo" src="LogoSafco.png" alt="logo">
             </footer>
         </div>
     </div>
