@@ -328,6 +328,10 @@ header{
         max-width: 200px;
         height: 300px;
     }
+
+    .widget__img-figure-container-text{
+        font-size: 20px;
+    }
     
     header{
         position: fixed;
