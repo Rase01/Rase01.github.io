@@ -1,3 +1,7 @@
+* {
+    min-width: 0;
+}
+
 body{
     margin: 0 auto;
     background: #DADBBD;
@@ -31,6 +35,14 @@ header{
     border-bottom: 3px solid #B33030;
 }
 
+/*HEADER*/
+header{
+    background-color: #19282F;
+    height: 80px;
+    width: 100%;
+    border-bottom: 3px solid #B33030;
+}
+
 /*NAVBAR*/
 .main-nav{
     display: flex;
@@ -49,7 +61,9 @@ header{
 .main-nav__menu-ul-item{
     font-size: 18px;
     margin: 0 10px;
-    line-height: 50px;
+    line-height: 80px;
+    margin-right: 40px;
+
 }
 
 .main-nav__menu-ul-item-links{
@@ -67,7 +81,7 @@ header{
 
 .main-nav__logo-container {
     display: flex;
-    width: 100%;
+    width: 20%;
     height: 80px;
     padding: 8px 12px;
     margin-left: 40px;
@@ -129,24 +143,23 @@ header{
 .main__resume-p{
     padding: 50px;
     width: 600px;
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
     font-weight: 600;
     margin: auto;
-    text-align: center;
     color: #DADBBD;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
 }
 
 .main__h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: #B33030;
     text-shadow: 3px 3px 1px black;
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 /*WIDGET*/
@@ -156,7 +169,7 @@ header{
     color: #151D3B;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .widget__img{
@@ -167,7 +180,7 @@ header{
 }
 
 .widget__img-figure{
-    height: 250px;
+    height: 240px;
     width: 400px;
     position: relative;
     overflow: hidden;
@@ -199,22 +212,29 @@ header{
 }
 
 .widget__img-figure-container-text{
+    width: 100%;
+    height: 100%;
+    align-items: center;
     list-style: none;
     margin-right: 30px;
     text-align: center;
-    font-size: 30px;
-    color: #DADBBD;
+    font-size: 25px;
+    margin-top: 15px;
     line-height: 40px;
+    color: #DADBBD;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .widget__img-figure-container-text--palta{
+    width: 100%;
+    height: 100%;
     list-style: none;
     margin-right: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 50px;
+    line-height: 60px;
     color: #DADBBD;
-    line-height: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -243,12 +263,15 @@ header{
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 600;
-    margin-right: 50px;
     color: #DADBBD;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .footer__logo{
     width: 150px;
+}
+
+.footer__menu-item--active{
+    font-size: 30px;
 }
 
 
@@ -277,9 +300,10 @@ header{
     }
 
     .container .main__resume-p{
-        width: 250px;
+        width: 100%;
         margin: auto;
-        text-align: center;
+        text-align: justify;
+        font-size: 20px;
     }
 
     .container .widget{
@@ -293,9 +317,18 @@ header{
         padding-top: 60px;
     }
     
+    .main__resume-img{
+        height: 230px;
+    }
+
+
+    .main__h1{
+        font-size: 80px;
+    }
+
     .main__h2{
         width: 100%;
-        font-size: 60px;
+        font-size: 50px;
         text-align: center;
     }
 
@@ -303,7 +336,7 @@ header{
         width: 200px;
         height: 100vh;
         position: fixed;
-        top: 83px;
+        top: 80px;
         background-color: #19282F;
         overflow: hidden;
         z-index: 1;
@@ -324,18 +357,61 @@ header{
         flex-direction: column;
         margin-left: 0;
         padding-left: 0;
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: 20px;
         max-width: 200px;
         height: 300px;
+    }
+
+    .main-nav__menu-ul-item{
+        line-height: 50px;
+    }
+
+    .main-nav__logo-container{
+        width: 120px;
+    }
+
+    .widget__h2{
+        font-size: 30px;
+    }
+
+    .widget__description{
+        font-size: 25px;
+    }
+
+    .widget__img-figure-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .widget__img-figure-container-text{
         font-size: 20px;
     }
+
+    #uva{
+        width: 100%;
+        height: 100%;
+    }
     
+    .footer__menu{
+        font-size: 15px;
+    }
+    .footer__logo{
+        width: 100px;
+    }
+
     header{
         position: fixed;
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .widget__img-figure{
+        width: 100%;
+        border-radius: 0;
+    }
+    .widget__img-figure-container-text--palta{
+        font-size: 20px;
     }
 }

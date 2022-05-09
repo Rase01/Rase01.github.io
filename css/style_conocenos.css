@@ -148,7 +148,7 @@ header{
 }
 
 .article-resume__text-paragraph b{
-    color: #B33030;
+    color: #e33737;
 }
 
 .article-resume__img{
@@ -209,7 +209,6 @@ header{
 }
 
 .article-values__text-list-item::before {
-    content: attr(data-icon);
     font-size: 1.25em;
 }
 
@@ -323,6 +322,10 @@ header{
     .article-resume__img, .article-values__img{
         width: 300px;
         padding-bottom: 30px;
+    }
+
+    .article-resume__text-paragraph, .article-values__text-list{
+        font-size: 15px;
     }
 
     .article-values{
