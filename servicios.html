@@ -3,80 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0
+    minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style_servicios.css">
+    <script src="https://kit.fontawesome.com/f4c449a1a2.js" crossorigin="anonymous"></script>
     <title>SERVICIOS</title>
 </head>
-<body style="margin: 0; padding: 0;">
-    <header>
-        <nav class="nav">
-            <a href="index.html" class="nav-logo">
-                <div id="box-img">
-                    <img src="img/LogoSafco.png" alt="logo" class="logo">
+<body>
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+                <div class="main-nav__logo-container">
+                    <a href="conocenos-test.html"><img src="img/LogoSafco.png" alt="logo"></a>
                 </div>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="index.html" class="links"><b>HOME</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="conocenos.html" class="links"><b>CONOCENOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="productos.html" class="links"><b>PRODUCTOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="servicios.html" class="links"><b>SERVICIOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="contacto.html" class="links"><b>CONTACTANOS</b></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <br><br>
-    <main>    
-        <h1 align="center">SERVICIOS</span></h1>
-        <table align="center" class="tabla_content">
-            <thead>
-                <th>PRODUCCIÓN</th>
-                <th>VENTA</th>
-                <th>EXPORTACIÓN</th>
-            </thead>
-            <tr>
-                <td>
-                    Nos especializamos en la producción de UVA y PALTA de la mejor calidad del mercado. 
-                </td>
-                <td>
-                    Tenemos cobertura a todo el mercado nacional, llevando nuestros productos a todos los hogares de los peruanos.
-                </td>
-                <td>
-                    Nos hemos expandido también al mercado internacional con la exportación de nuestros productos de primera calidad.
-                </td>
-            </tr>
-                <td>
-                    <img src="img/produccion.jpg" alt="produccion" width="300px" height="200px" class="image">
-                </td>
-                <td>
-                    <img src="img/venta.jpg" alt="ventas" width="300px" height="200px" class="image">
-                </td>
-                <td>
-                    <img src="img/exportacion.jpg" alt="exportacion" width="300px" height="200px" class="image">
-                </td>
-            <tr>
-
-            </tr>
-        </table>
-    </main>
-    <footer>
-        <ul class="list">
-            <li><big><big>CONTACTO</big></big></li>
-            <li>Alcanflores 1234</li>
-            <li>Miraflores Lima 20</li>
-            <li>Teléfono: +51 999 876 532</li>
-            <li>Correo: comercio@tavaperu.com</li>
-        </ul>
-        <img src="img/LogoSafco.png" alt="logo" width="150" id="logo">
-    </footer>
+                <div class="main-nav__menu" id="nav-menu">
+                    <ul class="main-nav__menu-ul">
+                        <li class="main-nav__menu-ul-item">
+                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div class="main" id="move-contenido">
+            <main>
+                <div class="main__h1">
+                    <h1>SERVICIOS</h1>
+                </div>
+            </main>
+        </div>
+        <div class="services" id="services">
+            <div class="services__produccion">
+                <div class="services__produccion-h2">
+                    <h2>PRODUCCIÓN</h2>
+                </div>
+                <div class="services__produccion-p">
+                    <p>
+                        Nos especializamos en la producción de UVA y PALTA de la mejor calidad del mercado.
+                    </p>
+                </div>
+                <div class="services__produccion-img">
+                    <img src="img/produccion.jpg" alt="produccion" class="image">
+                </div>
+            </div>
+            <div class="services__venta">
+                <div class="services__venta-h2">
+                    <h2>VENTA</h2>
+                </div>
+                <div class="services__venta-p">
+                    <p>
+                        Tenemos cobertura a todo el mercado nacional, llevando nuestros productos a todos los hogares de los peruanos.
+                    </p>
+                </div>
+                <div class="services__venta-img">
+                    <img src="img/venta.jpg" alt="ventas" class="image">
+                </div>
+            </div>
+            <div class="services__exportacion">
+                <div class="services__exportacion-h2">
+                    <h2>EXPORTACION</h2>
+                </div>
+                <div class="services__exportacion-p">
+                    <p>
+                        Nos hemos expandido también al mercado internacional con la exportación de nuestros productos de primera calidad.
+                    </p>
+                </div>
+                <div class="services__exportacion-img">
+                    <img src="img/exportacion.jpg" alt="exportacion" class="image">
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer"> 
+            <footer>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item--active">CONTACTO</li>
+                    <li class="footer__menu-item">Alcanflores 1234</li>
+                    <li class="footer__menu-item">Miraflores Lima 20</li>
+                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
+                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
+                </ul>
+                <img class="footer__logo" src="img/LogoSafco.png" alt="logo">
+            </footer>
+        </div>
+    </div>  
+    <script src="js/script_servicios.js"></script>
 </body>
 </html>

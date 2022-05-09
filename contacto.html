@@ -3,124 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0
+    minimum-scale=1.0">
     <link rel="stylesheet" href="css/style_contacto.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/f4c449a1a2.js" crossorigin="anonymous"></script>
     <title>CONTACTO</title>
 </head>
 <body style="margin: 0; padding: 0;">
-    <header>
-        <nav class="nav">
-            <a href="index.html" class="nav-logo">
-                <div id="box-img">
-                    <img src="img/LogoSafco.png" alt="logo" class="logo">
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+                <div class="main-nav__logo-container">
+                    <a href="conocenos-test.html"><img src="img/LogoSafco.png" alt="logo"></a>
                 </div>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="index.html" class="links"><b>HOME</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="conocenos.html" class="links"><b>CONOCENOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="productos.html" class="links"><b>PRODUCTOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="servicios.html" class="links"><b>SERVICIOS</b></a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="contacto.html" class="links"><b>CONTACTANOS</b></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <br><br>
-    <h1 align="center">DÉJANOS UN <span id="titulo-2">MENSAJE</span></h1>
-    <table align="center" class="tabla_formulario">
-        <tr align="center">
-            <td>
-                <form>
-                        <table>  
-                            <tr>
-                                <td>Nombre:</td>
-                                <td><label>
-                                    <input type="text" name="nombre">
-                                </label></td>
-                            </tr>
-                            <tr>
-                                <td>Apellidos:</td>
-                                <td>
-                                    <label>
-                                        <input type="text" name="apellidos">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>DNI:</td>
-                                <td>
-                                    <label>
-                                        <input type="text" name="dni">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Correo:</td>
-                                <td>
-                                    <label>
-                                        <input type="email" name="correo">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono:</td>
-                                <td>
-                                    <label>
-                                        <input type="tel" name="telefono">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">Tipo de mensaje:</td>
-                                <td>
-                                    <input type="radio" name="tipo">Consulta<br>
-                                    <input type="radio" name="tipo">Solicitud<br>
-                                    <input type="radio" name="tipo">Reclamo
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Asuno:</td>
-                                <td>
-                                    <label>
-                                        <input type="text" name="asunto">
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top;">Mensaje:</td>
-                                <td>
-                                    <textarea name="comentario" cols="40" rows="15"></textarea>
-                                    <br><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right"><input type="reset" name="reset" value="Borrar" style="font-size: x-large;">
-                                    </td>
-                                <td align="center"><input type="submit" name="Enviar" value="Enviar" style="font-size: x-large;"></td>
-                            </tr>
-                        </table>
-                </form>
-            </td>
-        </tr>
-    </table>
-    <footer>
-        <ul class="list">
-            <li><big><big>CONTACTO</big></big></li>
-            <li>Alcanflores 1234</li>
-            <li>Miraflores Lima 20</li>
-            <li>Teléfono: +51 999 876 532</li>
-            <li>Correo: comercio@tavaperu.com</li>
-        </ul>
-        <img src="img/LogoSafco.png" alt="logo" width="150" id="logo">
-    </footer>
+                <div class="main-nav__menu" id="nav-menu">
+                    <ul class="main-nav__menu-ul">
+                        <li class="main-nav__menu-ul-item">
+                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div class="main" id="move-contenido">
+            <main>
+                <h1 class="main__h1">DÉJANOS UN <span class="main__h1--part">MENSAJE</span></h1>
+                
+            </main>
+        </div>
+        <div class="footer" id="footer"> 
+            <footer>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item--active">CONTACTO</li>
+                    <li class="footer__menu-item">Alcanflores 1234</li>
+                    <li class="footer__menu-item">Miraflores Lima 20</li>
+                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
+                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
+                </ul>
+                <img class="footer__logo" src="img/LogoSafco.png" alt="logo">
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

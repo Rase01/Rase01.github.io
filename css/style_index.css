@@ -337,7 +337,6 @@ header{
         height: 100vh;
         position: fixed;
         top: 80px;
-        background-color: #19282F;
         overflow: hidden;
         z-index: 1;
         transform: translateX(-200px);
