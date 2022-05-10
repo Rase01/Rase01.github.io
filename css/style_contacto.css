@@ -118,6 +118,66 @@ header{
     text-shadow: 3px 3px 1px #B33030;
 }
 
+.flex-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    background: #e2e3cd;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.form{
+    min-width: 320px;
+    text-align: center;
+    flex: 1;
+    padding: 30px;
+    max-width: 500px;
+}
+
+.form__section-input{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 3px solid #B33030;
+    background: #19282F;
+    color: #DADBBD;
+}
+
+.form__section-input:focus{
+    background: #263f4b;
+    outline: none;
+}
+
+.form textarea{
+    min-height: 150px;
+    resize: none;
+}
+
+.form__section label{
+    font-size: 20px;
+    color:#DADBBD;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form input[type="submit"], .form input[type="reset"]{
+    background-color: #B33030;
+}
+
+.tipo-button{
+    display: flex;
+    background: #19282F;
+}
+
+.tipo-button div, .tipo-button label{
+    margin: 10px 5px;
+}
+
 /*FOOTER*/
 .footer{
     background-color: #19282F; 
@@ -142,4 +202,90 @@ header{
 
 .footer__menu-item--active{
     font-size: 30px;
+}
+
+/*Responsive style for mobile devices*/
+@media screen and (max-width: 952px) {
+    
+    #icon-menu{
+        visibility: visible;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .move-contenido{
+        transform: translateX(200px);
+    }
+    
+    .main, .footer{
+        transition: 300ms;
+    }
+    .main{
+        padding-top: 60px;
+    }
+    .main__h1{
+        font-size: 60px;
+    }
+    .main-nav__menu{
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        overflow: hidden;
+        z-index: 1;
+        transform: translateX(-200px);
+        transition: all 300ms;
+    }
+
+    .main-nav__menu{
+        background-color: #B33030;
+    }
+
+    .show-menu{
+        width: 200px;
+        transform: translateX(0px);;
+    }
+
+    .main-nav__menu-ul{
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 20px;
+        max-width: 200px;
+        height: 300px;
+    }
+
+    .main-nav__menu-ul-item{
+        line-height: 50px;
+    }
+
+    .main-nav__logo-container{
+        width: 120px;
+    }
+
+    .form__section-input{
+        font-size: 15px;
+    }
+
+    .form__section label, .tipo-button{
+        font-size: 15px;
+    } 
+    
+    .tipo-button{
+        flex-direction: column;
+    }
+
+    .footer__menu{
+        font-size: 15px;
+    }
+    .footer__logo{
+        width: 100px;
+    }
+
+    header{
+        position: fixed;
+        z-index: 1;
+    }
 }
