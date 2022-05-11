@@ -3,15 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_index.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0
+    minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style_productos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/f4c449a1a2.js" crossorigin="anonymous"></script>
     <title>PRODUCTOS</title>
-    <frameset rows="30%,*" frameborder="no" margin-top="0" padding="0">
-        <frame src="superior.html" name="encabezado" scrolling="no"></frame>
-        <frameset rows="70%,*">
-            <frame src="cuerpo.html" name="cuerpo" scrolling="no"></frame>
-            <frame src="inferior.html" name="inferior" scrolling="no"></frame>
-        </frameset>
-    </frameset>
 </head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+                <div class="main-nav__logo-container">
+                    <a href="productos.html"><img src="img/LogoSafco.png" alt="logo"></a>
+                </div>
+                <div class="main-nav__menu" id="nav-menu">
+                    <ul class="main-nav__menu-ul">
+                        <li class="main-nav__menu-ul-item">
+                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
+                        </li>
+                        <li class="main-nav__menu-ul-item">
+                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div class="main" id="move-contenido">
+            <h1 class="main__h1">PRODUCTOS</h1>
+            <h2 class="main__h2">ELIJA UN PRODUCTO</h2>
+            <div class="main__productos">
+                <div class="main__productos-uva">
+                    <div class="main__h3">
+                        <a href="uva.html">UVA</a>
+                    </div>
+                    <div class="main__img">
+                        <a href="uva.html">
+                            <div class="main__img-container">
+                                <img src="img/uva.jpg" alt="uva">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="main__productos-palta">
+                    <div class="main__h3">
+                        <a href="palta.html">PALTA</a>
+                    </div>
+                    <div class="main__img">
+                        <a href="palta.html">
+                            <div class="main__img-container">
+                                <img src="img/palta.jpg" alt="palta">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer"> 
+            <footer>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item--active">CONTACTO</li>
+                    <li class="footer__menu-item">Alcanflores 1234</li>
+                    <li class="footer__menu-item">Miraflores Lima 20</li>
+                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
+                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
+                </ul>
+                <img class="footer__logo" src="img/LogoSafco.png" alt="logo">
+            </footer>
+        </div>
+    </div>
+    <script src="js/script_productos.js"></script>
+</body>
 </html>

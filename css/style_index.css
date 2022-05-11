@@ -35,14 +35,6 @@ header{
     border-bottom: 3px solid #B33030;
 }
 
-/*HEADER*/
-header{
-    background-color: #19282F;
-    height: 80px;
-    width: 100%;
-    border-bottom: 3px solid #B33030;
-}
-
 /*NAVBAR*/
 .main-nav{
     display: flex;
@@ -323,7 +315,7 @@ header{
 
 
     .main__h1{
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .main__h2{
