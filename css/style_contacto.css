@@ -178,6 +178,10 @@ header{
     margin: 10px 5px;
 }
 
+.boton{
+    cursor: pointer;
+}
+
 /*FOOTER*/
 .footer{
     background-color: #19282F; 
