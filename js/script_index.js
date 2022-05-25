@@ -11,4 +11,4 @@ function mostrar_menu(){
 }
 
 let nombre = prompt("Hola!, ¿Cuál es su nombre?");
-alert(`Bienvenido ${nombre}!`);
+window.alert(`Bienvenido ${nombre}!`);
