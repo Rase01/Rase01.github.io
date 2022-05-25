@@ -7,3 +7,11 @@ function mostrar_menu(){
     document.getElementById("nav-menu").classList.toggle('show-menu');
     
 }
+
+redirigir_uva = ()=>{
+    alert("Visitando nuestra variedad de uvas!")
+}
+
+redirigir_palta = ()=>{
+    alert("Visitando nuestra variedad de paltas!")
+}

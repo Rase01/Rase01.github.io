@@ -10,5 +10,7 @@ function mostrar_menu(){
 
 function enviar() {
     let apellido = document.form.apellido.value;
-    alert(`Gracias por su mensaje! Nos contactaremos con usted lo más pronto posible. Mr/Ms. ${apellido}`)
+    if (apellido) {
+        alert(`Gracias por su mensaje! Nos contactaremos con usted lo más pronto posible. Estimado(@) ${apellido}`)
+    }    
 }
