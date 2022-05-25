@@ -8,9 +8,13 @@ function mostrar_menu(){
     
 }
 
+validate = ()=>{
+    return confirm("¿Quiere enviar este mensaje?");
+}
+
 function enviar() {
     let apellido = document.form.apellido.value;
-    if (apellido) {
+    if (validate(form)) {
         alert(`Gracias por su mensaje! Nos contactaremos con usted lo más pronto posible. Estimado(@) ${apellido}`)
     }    
 }

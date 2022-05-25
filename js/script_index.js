@@ -9,6 +9,3 @@ function mostrar_menu(){
     document.getElementById("nav-menu").classList.toggle('show-menu')
     
 }
-
-let nombre = prompt("Hola!, ¿Cuál es su nombre?");
-window.alert(`Bienvenido ${nombre}!`);
