@@ -50,7 +50,7 @@
             </main>
             <section>
                 <div class="flex-form">
-                    <form class="form" name="form">
+                    <form class="form" name="form" action="form.php" method="post">
                         <div class="form__section">
                             <input type="text" class="form__section-input" name="nombre" placeholder="Ingrese su nombre" required>
                         </div>
@@ -83,10 +83,10 @@
                             </div>
                         </div>
                         <div class="form__section">
-                            <input type="text" class="form__section-input" placeholder="Ingrese el asunto del mensaje" required>
+                            <input type="text" class="form__section-input" placeholder="Ingrese el asunto del mensaje" name="asunto" required>
                         </div>
                         <div class="form__section">
-                            <textarea class="form__section-input" placeholder="Ingrese su mensaje" required></textarea>
+                            <textarea class="form__section-input" placeholder="Ingrese su mensaje" name="mensaje" required></textarea>
                         </div>
                         <div class="form__section">
                             <input type="submit" class="form__section-input boton" onclick="enviar()">

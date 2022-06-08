@@ -12,7 +12,7 @@ function mostrar_menu(){
 validate = ()=>{
     return confirm("¿Quiere enviar este mensaje?");
 }
-
+ 
 //Envia el mensaje en el boton enviar y muestra un msj, sino no muestra el msj.
 function enviar() {
     let apellido = document.form.apellido.value;
