@@ -191,10 +191,22 @@ header{
 }
 
 table{
+    background: #e2e3cd;
     width: 300px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
+    margin: 20px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #DADBBD;
+    font-size: 20px;
 }
 
+table td{
+    background-color: #19282F;
+    border-bottom: 3px solid #B33030;
+    padding: 10px 10px;
+    text-align: center;
+}
 
 /*FOOTER*/
 .footer{

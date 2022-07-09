@@ -12,37 +12,13 @@
 </head>
 <body>
     <div class="container">
-        <!--HEADER-->
-        <header>
-            <nav class="main-nav">
-                <div class="main-nav__logo-container">
-                    <a href="contacto.html"><img src="img/LogoSafco.png" alt="logo"></a>
-                </div>
-                <div class="main-nav__menu" id="nav-menu">
-                    <ul class="main-nav__menu-ul">
-                        <li class="main-nav__menu-ul-item">
-                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--Icon button for responsive-->
-            <div id="icon-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+        
+        <?php 
+        
+        include 'view/header.php';
+        
+        ?>
+
         <!--MAIN PART including FORM and TITLE-->
         <div class="main" id="move-contenido">
             <main>
@@ -50,7 +26,7 @@
             </main>
             <section>
                 <div class="flex-form">
-                    <form class="form" name="form">
+                    <form class="form" name="form" action="form.php" method="post">
                         <div class="form__section">
                             <input type="text" class="form__section-input" name="nombre" placeholder="Ingrese su nombre" required>
                         </div>
@@ -83,13 +59,13 @@
                             </div>
                         </div>
                         <div class="form__section">
-                            <input type="text" class="form__section-input" placeholder="Ingrese el asunto del mensaje" required>
+                            <input type="text" class="form__section-input" placeholder="Ingrese el asunto del mensaje" name="asunto" required>
                         </div>
                         <div class="form__section">
-                            <textarea class="form__section-input" placeholder="Ingrese su mensaje" required></textarea>
+                            <textarea class="form__section-input" placeholder="Ingrese su mensaje" name="mensaje" required maxlength='250'></textarea>
                         </div>
                         <div class="form__section">
-                            <input type="submit" class="form__section-input boton" onclick="enviar()">
+                            <input type="submit" class="form__section-input boton" name='enviar'>
                         </div>
                         <div class="form__section">
                             <input type="reset" class="form__section-input boton">
@@ -98,19 +74,9 @@
                 </div>
             </section>
         </div>
-        <!--FOOTER-->
-        <div class="footer" id="footer"> 
-            <footer>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item--active">CONTACTO</li>
-                    <li class="footer__menu-item">Alcanflores 1234</li>
-                    <li class="footer__menu-item">Miraflores Lima 20</li>
-                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
-                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
-                </ul>
-                <img class="footer__logo" src="img/LogoSafco.png" alt="logo">
-            </footer>
-        </div>
+        
+        <?php include 'view/footer.php'?>
+
     </div>
     <script src="js/script_contacto.js"></script>
 </body>

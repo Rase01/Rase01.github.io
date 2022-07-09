@@ -13,37 +13,8 @@
 <body>
     <!--CONTAINER FOR ALL ELEMENTS-->
     <div class="container">
-        <!--HEADER-->
-        <header>
-            <nav class="main-nav">
-                <div class="main-nav__logo-container">
-                    <a href="servicios.html"><img src="img/LogoSafco.png" alt="logo"></a>
-                </div>
-                <div class="main-nav__menu" id="nav-menu">
-                    <ul class="main-nav__menu-ul">
-                        <li class="main-nav__menu-ul-item">
-                            <a href="index.html" class="main-nav__menu-ul-item-links"><b>HOME</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="conocenos.html" class="main-nav__menu-ul-item-links"><b>CONOCENOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="productos.html" class="main-nav__menu-ul-item-links"><b>PRODUCTOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="servicios.html" class="main-nav__menu-ul-item-links"><b>SERVICIOS</b></a>
-                        </li>
-                        <li class="main-nav__menu-ul-item">
-                            <a href="contacto.html" class="main-nav__menu-ul-item-links"><b>CONTACTANOS</b></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--BUTTON FOR RESPONSIVE MENU-->
-            <div id="icon-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+        
+        <?php include 'view/header.php'?>
 
         <!--MAIN TITLE-->
         <div class="main" id="move-contenido">
@@ -97,19 +68,7 @@
             </div>
         </div>
 
-        <!--FOOTER-->
-        <div class="footer" id="footer"> 
-            <footer>
-                <ul class="footer__menu">
-                    <li class="footer__menu-item--active">CONTACTO</li>
-                    <li class="footer__menu-item">Alcanflores 1234</li>
-                    <li class="footer__menu-item">Miraflores Lima 20</li>
-                    <li class="footer__menu-item">Teléfono: +51 999 876 532</li>
-                    <li class="footer__menu-item">Correo: comercio@tavaperu.com</li>
-                </ul>
-                <img class="footer__logo" src="img/LogoSafco.png" alt="logo">
-            </footer>
-        </div>
+        <?php include 'view/footer.php'?>
     </div>  
     <script src="js/script_servicios.js"></script>
 </body>
