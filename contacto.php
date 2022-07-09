@@ -62,7 +62,11 @@
                             <input type="text" class="form__section-input" placeholder="Ingrese el asunto del mensaje" name="asunto" required>
                         </div>
                         <div class="form__section">
+<<<<<<< HEAD:contacto.php
                             <textarea class="form__section-input" placeholder="Ingrese su mensaje" name="mensaje" required maxlength='250'></textarea>
+=======
+                            <textarea class="form__section-input" placeholder="Ingrese su mensaje" name="mensaje" required></textarea>
+>>>>>>> 3ffa9a2173af93d7e0f57995bc664d76e210775d:contacto.html
                         </div>
                         <div class="form__section">
                             <input type="submit" class="form__section-input boton" name='enviar'>
